@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afspraak maken — Sportfysiotherapie Noordwijk</title>
+<meta name="description" content="Maak een afspraak bij Sportfysiotherapie Noordwijk. Acute sportblessure? Binnen 24 uur geholpen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="Sportfysiotherapie Noordwijk — home"><img src="assets/img/Logo-Sportfysio.png" alt="Sportfysiotherapie Noordwijk" width="140" height="46"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <ul id="menu">
+      <li><a href="index.html#aanpak">Aanpak</a></li>
+      <li><a href="specialisaties.html">Specialisaties</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="praktisch.html">Tarieven &amp; info</a></li>
+      <li><a class="btn btn-primary" href="afspraak.html" aria-current="page">Afspraak maken <svg class="step" viewBox="0 0 14 12" aria-hidden="true"><path d="M1 11h4V6h4V1h4" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <header class="page-hero">
+    <p class="crumbs"><a href="index.html">Home</a> / Afspraak maken</p>
+    <h1>Afspraak <span class="oranje">maken</span></h1>
+    <p class="lead">Laat je gegevens achter en we bellen je terug om een tijd te plannen. Geen verwijzing nodig.</p>
+  </header>
+
+  <div class="afspraak-grid">
+    <div>
+      <form id="afspraak-form" class="form" novalidate>
+        <div class="veld">
+          <label for="naam">Naam</label>
+          <input id="naam" name="naam" autocomplete="name" required>
+          <p class="fout">Vul je naam in.</p>
+        </div>
+        <div class="rij">
+          <div class="veld">
+            <label for="telefoon">Telefoonnummer</label>
+            <input id="telefoon" name="telefoon" type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12345678" required>
+            <p class="fout">Begin met 0 of +31, bijvoorbeeld 06 12345678.</p>
+          </div>
+          <div class="veld">
+            <label for="email">E-mailadres</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <p class="fout">Dit e-mailadres klopt niet helemaal — controleer het even.</p>
+          </div>
+        </div>
+        <div class="veld">
+          <label for="soort">Waar gaat het om? <small>(optioneel)</small></label>
+          <select id="soort" name="soort">
+            <option value="">Kies een onderwerp</option>
+            <option>Acute sportblessure</option>
+            <option>Langer bestaande klacht</option>
+            <option>Knieklacht / knienetwerk</option>
+            <option>Revalidatie na ongeval of operatie</option>
+            <option>Loopanalyse (VSO)</option>
+            <option>Brace of bandage</option>
+            <option>Iets anders</option>
+          </select>
+        </div>
+        <fieldset class="veld" style="border:0;padding:0;margin:0">
+          <legend style="font-weight:600;font-size:.95rem;margin-bottom:8px">Voorkeur dagdeel <small style="font-weight:400;color:var(--grijs)">(optioneel)</small></legend>
+          <div class="keuzes">
+            <label><input type="checkbox" name="dagdeel" value="ochtend"> Ochtend</label>
+            <label><input type="checkbox" name="dagdeel" value="middag"> Middag</label>
+            <label><input type="checkbox" name="dagdeel" value="avond (di, do, vr)"> Avond (di, do, vr)</label>
+          </div>
+        </fieldset>
+        <div class="veld">
+          <label for="bericht">Bericht <small>(optioneel)</small></label>
+          <textarea id="bericht" name="bericht" placeholder="Vertel kort wat er speelt en welke sport je doet."></textarea>
+        </div>
+        <div>
+          <button class="btn btn-primary" type="submit">Verstuur aanvraag <svg class="step" viewBox="0 0 14 12" aria-hidden="true"><path d="M1 11h4V6h4V1h4" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+        </div>
+      </form>
+      <div class="form-ok" role="status" aria-live="polite">
+        <h3>Bijna klaar</h3>
+        <p>Je e-mailprogramma opent met je aanvraag al ingevuld. Verstuur die mail, dan nemen we binnen een werkdag contact met je op. Opende er niets? Mail naar <a href="mailto:info@sportfysiotherapienoordwijk.nl" style="color:#fff">info@sportfysiotherapienoordwijk.nl</a> of bel <a href="tel:+31644442583" style="color:#fff">06 4444 25 83</a>.</p>
+      </div>
+    </div>
+
+    <aside class="side-card">
+      <p class="acuut">Acute blessure?<br><span class="oranje">Bel direct.</span></p>
+      <p>Met een acute sportblessure ben je binnen 24 uur aan de beurt.</p>
+      <a class="btn btn-primary" href="tel:+31644442583">06 4444 25 83</a>
+      <hr>
+      <h3>Adres</h3>
+      <p>Nieuwe Zeeweg 165 (Zwembad BinnenZee)<br>2202 HA Noordwijk</p>
+      <h3>Openingstijden</h3>
+      <table class="uren">
+        <tr data-dag="1"><td>Maandag</td><td>08.00 – 18.00</td></tr>
+        <tr data-dag="2"><td>Dinsdag</td><td>08.00 – 20.00</td></tr>
+        <tr data-dag="3"><td>Woensdag</td><td>08.00 – 18.00</td></tr>
+        <tr data-dag="4"><td>Donderdag</td><td>08.00 – 20.00</td></tr>
+        <tr data-dag="5"><td>Vrijdag</td><td>08.00 – 20.00</td></tr>
+        <tr data-dag="6"><td>Zaterdag</td><td>Op afspraak</td></tr>
+      </table>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="keur">
+      <a href="https://www.keurmerkfysiotherapie.nl/" target="_blank" rel="noopener"><img src="assets/img/keurmerk-fysiotherapie-logo.jpg" alt="Keurmerk Fysiotherapie" loading="lazy"></a>
+      <span>Verwijzer? <a href="https://zorgdomein.com/" target="_blank" rel="noopener">Verwijs via ZorgDomein</a></span>
+    </div>
+    <nav aria-label="Footer">
+      <a href="praktisch.html#huisregels">Huisregels</a>
+      <a href="praktisch.html#tarieven">Tarieven</a>
+      <a href="https://nl-nl.facebook.com/SportfysiotherapieNoordwijk/" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+    <p class="demo-note">Ontwerpvoorstel voor Sportfysiotherapie Noordwijk door Studio Annema. Teksten en foto's © Sportfysiotherapie Noordwijk.</p>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
